@@ -36,10 +36,10 @@ Touch = function() {
 * An identification number for each touch point, unique to that touch point per session.
 * The algorithm for determining the identifier value is as follows: <br /><br />
 * <ol>
-* <li>if there are no other active touch event sessions, the value of identifier must be 0</li>
-* <li>if there is at least one active touch event session, the value of identifier 
+* <li>If there are no other active touch event sessions, the value of identifier must be 0</li>
+* <li>If there is at least one active touch event session, the value of identifier 
 * must be the lowest integer not currently used by any active Touch object in 
-* any active touch event session</li>
+* any active touch-event session.</li>
 * </ol>
 * @type Number
 * @readOnly
@@ -49,7 +49,7 @@ Touch = function() {
 Touch.prototype.identifier = { };
 
 /**
-* x-coordinate of point relative to the screen
+* x-coordinate of point relative to the screen.
 * @type Number
 * @readOnly
 * @BB60+
@@ -58,7 +58,7 @@ Touch.prototype.identifier = { };
 Touch.prototype.screenX = { };
 
 /**
-* y-coordinate of point relative to the screen
+* y-coordinate of point relative to the screen.
 * @type Number
 * @readOnly
 * @BB60+
@@ -67,7 +67,7 @@ Touch.prototype.screenX = { };
 Touch.prototype.screenY = { };
 
 /**
-* x-coordinate of point relative to the viewport, excluding any scroll offset
+* x-coordinate of point relative to the viewport, excluding any scroll offset.
 * @type Number
 * @readOnly
 * @BB60+
@@ -76,7 +76,7 @@ Touch.prototype.screenY = { };
 Touch.prototype.clientX = { };
 
 /**
-* y-coordinate of point relative to the viewport, excluding any scroll offset
+* y-coordinate of point relative to the viewport, excluding any scroll offset.
 * @type Number
 * @readOnly
 * @BB60+
@@ -85,7 +85,7 @@ Touch.prototype.clientX = { };
 Touch.prototype.clientY = { };
 
 /**
-* x-coordinate of point relative to the viewport, including any scroll offset
+* x-coordinate of point relative to the viewport, including any scroll offset.
 * @type Number
 * @readOnly
 * @BB60+
@@ -94,7 +94,7 @@ Touch.prototype.clientY = { };
 Touch.prototype.pageX = { };
 
 /**
-* y-coordinate of point relative to the viewport, including any scroll offset
+* y-coordinate of point relative to the viewport, including any scroll offset.
 * @type Number
 * @readOnly
 * @BB60+
@@ -103,7 +103,7 @@ Touch.prototype.pageX = { };
 Touch.prototype.pageY = { };
 
 /**
-* the radius of the ellipse which most closely circumscribes the touching area (e.g. finger, stylus) along the x-axis, in pixels of the same scale as screenX; 1 if no value is known. The value must be positive.
+* The radius of the ellipse which most closely circumscribes the touching area (e.g. finger, stylus) along the x-axis, in pixels of the same scale as screenX; 1 if no value is known. The value must be positive.
 * @type Number
 * @readOnly
 * @BB60+
@@ -112,7 +112,7 @@ Touch.prototype.pageY = { };
 Touch.prototype.radiusX = { };
 
 /**
-* the radius of the ellipse which most closely circumscribes the touching area (e.g. finger, stylus) along the y-axis, in pixels of the same scale as screenY; 1 if no value is known. The value must be positive.
+* The radius of the ellipse which most closely circumscribes the touching area (e.g. finger, stylus) along the y-axis, in pixels of the same scale as screenY; 1 if no value is known. The value must be positive.
 * @type Number
 * @readOnly
 * @BB60+
@@ -122,9 +122,9 @@ Touch.prototype.radiusY = { };
 
 /**
 *
-* the angle (in degrees) that the ellipse described by radiusX and radiusY is rotated 
+* The angle (in degrees) that the ellipse described by radiusX and radiusY is rotated 
 * clockwise about its center; 0 if no value is known. The value must be greater than 
-* or equal to 0 and less than 90. <br /><br />
+* or equal to 0 and less than 90. Corrected grammar and typos.<br />
 * 
 * If the ellipse described by radiusX and radiusY is circular, then rotationAngle has 
 * no effect. The user agent may use 0 as the value in this case, or it may use any other 
@@ -249,7 +249,7 @@ TouchEvent.prototype.altKey = {};
 TouchEvent.prototype.metaKey = {};
 
 /**
-* true if the ctrl (Control) key modifier is activated; otherwise false
+* true if the ctrl (Control) key modifier is activated; otherwise false.
 * @type Boolean
 * @readOnly
 * @BB60+
