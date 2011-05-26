@@ -74,7 +74,7 @@ HTMLVideoElement.prototype.height = { };
 HTMLVideoElement.prototype.videoWidth = { };
 
 /**
-* videoHeight must return the intrinsic height of the video in CSS 
+* videoHeight must return the intrinsic height of the video in CSS. 
 * pixels.
 * @type Number
 * @readOnly
