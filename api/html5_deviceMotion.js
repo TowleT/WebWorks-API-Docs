@@ -99,8 +99,8 @@
  * Acceleration data is given in meters per second squared and uses the body axes defined in the device orientation event. Acceleration data (without the effect of gravity) cannot be provided when there is a lack of a gyroscope. 
  * Implementations that are unable to provide acceleration data without the effect of gravity may instead supply the acceleration including the effect of gravity. 
  * <p>The values reported are equal to the acceleration of the device, plus an acceleration equal and opposite to the acceleration due to gravity.
- * This is less useful in many applications but is provided as a means of providing best-effort support. 
- * These values can be stored and manipulated in variables outside the event scope. These values can be used to control the motion of objects defined on the DOM by the device's gyroscope and accelerometer. 
+ * This is less useful in many applications but is provided as a means of providing best-effort support. What does this mean? 
+ * These values can be stored and manipulated in variables outside the event scope. These values can be used to control the motion of objects defined in the DOM by the device's gyroscope and accelerometer. 
  * <br><br> {@image /images/xyz.jpg} <br><br>
  * <p>Data Examples: 
  * A device lying flat on a horizontal surface with the screen upmost has an acceleration of zero and the following value for accelerationIncludingGravity:
@@ -144,7 +144,7 @@ Acceleration = {
  * The Earth coordinate frame is a 'East, North, Up' frame at the user's location. It has the following 3 axes, where the ground plane is tangent to the WGS 84 spheroid at the user's location.
  * <ul>
  * <li>East (X) is in the ground plane, perpendicular to the North axis and positive towards the East.</li>
- * <li>North (Y) is in the ground plane and positive towards True North (towards the North Pole).</li>
+ * <li>North (Y) is in the ground plane and positive towards true North (towards the North Pole).</li>
  * <li>Up (Z) is perpendicular to the ground plane and positive upwards.</li>
  * </ul>
  * For a mobile device, the device coordinate frame has the following 3 axes. The axes are defined relative to the standard orientation of the screen, 
@@ -194,16 +194,16 @@ RotationRate={
 };
 
 /**
- * @toc {Device Orientation} HTML5 Device Motion Event
+ * @toc {Device Orientation} HTML5 Device Motion Event.
  * @PB10
  * @namespace
- * This event provides direct access to motion data from an accelerometer and gyroscope. The three pieces of data provided are the acceleration, acceleration including gravity and rotation rate. <br>Because our hardware currently does not have a gyroscope, not all interfaces of this event are available to us (acceleration without gravity and rotation rate.)<br>
+ * This event provides direct access to motion data from an accelerometer and gyroscope. The three pieces of data provided are the acceleration, acceleration including gravity and rotation rate. <br>Because the PlayBook currently does not have a gyroscope, not all interfaces of this event are available i.e.(acceleration without gravity and rotation rate.)<br>
  */ 
 DeviceMotionEvent = {
 
 	/**
 	 * @type Number
-	 * @desc The regular interval at which the event must fire at, given in milliseconds
+	 * @desc The regular interval at which the event must fire at, given in milliseconds.
 	 * @readOnly
 	 * @PB10
 	 */ 
@@ -219,7 +219,7 @@ DeviceMotionEvent = {
 	
 	/**
 	 * @type Acceleration
-	 * @desc Implementations that are unable to provide acceleration data without the effect of gravity (due, for example, to the lack of a gyroscope) may instead supply the acceleration including the effect of gravity. This is less useful in many applications but is provided as a means of providing best-effort support. 
+	 * @desc Implementations that are unable to provide acceleration data without the effect of gravity (due, for example, to the lack of a gyroscope) may instead supply the acceleration including the effect of gravity. This is less useful in many applications but is provided as a means of providing best-effort support. Not what this means to a developer?? 
 	 * In this case, the values reported are equal to the acceleration of the device, plus an acceleration equal and opposite to the acceleration due to gravity.
 	 * @readOnly
 	 * @PB10
