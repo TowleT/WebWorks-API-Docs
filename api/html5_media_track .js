@@ -29,8 +29,8 @@
 * There must not be two track element children of the same media 
 * element whose kind attributes are in the same state, whose 
 * srclang attributes are both missing or have values that represent 
-* the same language, and whose label attributes are again both 
-* missing or both have the same value.
+* the same language, and whose label attributes are both 
+* missing or have the same value.
 * @extends HTMLElement
 * @constructedBy {document.createElement("track")} {HTMLTrackElement can be constructed by using the document.createElement() method.}
 * var track = document.createElement("track");
@@ -47,8 +47,8 @@
 HTMLTrackElement = function() { };
 
 /**
-* kind is one of the following strings "subtitles", "captions", 
-* "descriptions", "chapters", "metadata"
+* Kind is one of the following strings "subtitles", "captions", 
+* "descriptions", "chapters", "metadata".
 * @type String
 * @BB60+
 * @PB10
@@ -59,7 +59,7 @@ HTMLTrackElement.prototype.kind = { };
 /**
 * The src attribute gives the address of the text track data. The 
 * value must be a valid non-empty URL potentially surrounded by 
-* spaces. This attribute must be presen
+* spaces. This attribute must be present.
 * @type String
 * @BB60+
 * @PB10
