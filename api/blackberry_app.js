@@ -69,8 +69,8 @@ blackberry.app ={
 	 * @description This method will set the icon that appears in the Home Screen of the PlayBook.
 	 * @returns {Boolean} Returns true if successful, false otherwise. The hover icon can only be set when the application icon has been set first. Changes made using this API are NOT persisted across PlayBook resets.
 	 * @BB50+
-	 * @param {String} uri Location of the image to use for the icon. The path to the image resource must be fully qualified. An example of a fully qualified path is local:///resourceFolder/icons/icon.png. The path to the resource must also be included in the whitelist. For example, accessing an image on the file system requires 'file:///' to be whitelisted
-	 * @param {Boolean} [hover=false]If set to true then the hover icon for the application is changed. By default this is false, so the icon that is changed is the default main icon for the application.
+	 * @param {String} uri Location of the image to use for the icon. The path to the image resource must be fully qualified. An example of a fully qualified path is local:///resourceFolder/icons/icon.png. The path to the resource must also be included in the whitelist. For example, accessing an image on the file system requires 'file:///' to be whitelisted.
+	 * @param {Boolean} [hover=false] If set to true then the hover icon for the application is changed. By default this is false, so the icon that is changed is the default main icon for the application.
 	 */
 	setHomeScreenIcon : function(uri,hover){},
 	
@@ -92,7 +92,7 @@ blackberry.app ={
 	author : "",
 	
 	/**
-	 * @description The author's email of the BlackBerry WebWorks application that is specified in the config.xml file. 
+	 * @description The author's email on the BlackBerry WebWorks application that is specified in the config.xml file. 
 	 * @BB50+
 	 * @PB10
 	 * @readonly
