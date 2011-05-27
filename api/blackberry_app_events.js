@@ -64,7 +64,7 @@ blackberry.app.event = {
 	 * @function
 	 * @description Assigns a listener that is called when a user swipes down from the top bezel of the BlackBerry PlayBook onto the screen.
 	 * <p/>
-	 * This event is dispatched when a user swipes down from the top bezel of the BlackBerry PlayBook onto the screen. Only one function can be assigned to this event. To unregister the callback call the onSwipeDown method and pass in null for the callback parameter. 	
+	 * This event is dispatched when a user swipes down from the top bezel of the BlackBerry PlayBook onto the screen. Only one function can be assigned to this event. To unregister the callback call the onSwipeDown method and pass in null for the callback parameter. 
 	 * @callback {function} onSwipeDownCallback Function to be called when the swipe down action occurs. Expected signature: function onSwipeDownCallback().
 	 * @PB10
 	 */
