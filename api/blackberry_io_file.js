@@ -44,7 +44,7 @@
 blackberry.io.file = {
 	/**
 	* Get the FileProperties object for a given file. 
-	* @param {String} path local storage file path to the file
+	* @param {String} path Local storage file path to the file.
 	* @returns {blackberry.io.file.FileProperties}
 	* @BB50+
 	* @PB10
@@ -53,7 +53,7 @@ blackberry.io.file = {
 	
 	/**
 	* Check whether or not a given file exists. 
-	* @param {String} path local storage file path to the file
+	* @param {String} path Local storage file path to the file.
 	* @returns {Boolean}
 	* @BB50+
 	* @PB10
@@ -62,7 +62,7 @@ blackberry.io.file = {
 	
 	/**
 	* Open the specified file with the registered content handler. 
-	* @param {String} path file path to the file to be opened.
+	* @param {String} path File path to the file to be opened.
 	* @returns {Boolean}
 	* @BB50+
 	* @PB10
@@ -71,7 +71,7 @@ blackberry.io.file = {
 	
 	/**
 	* Rename a given file. 
-	* @param {String} path local storage file path to the file
+	* @param {String} path Local storage file path to the file.
 	* @param {String} newFileName the new file name.
 	* @returns {void}
 	* @BB50+
@@ -81,8 +81,8 @@ blackberry.io.file = {
 	
 	/**
 	* Copy a file to a given destination. 
-	* @param {String} sourcePath local storage file path to the file to be copied
-	* @param {String} targetPath local storage file path to the new copied file. The name of the copied file should be specified at the end of the targetPath.
+	* @param {String} sourcePath Local storage file path to the file to be copied.
+	* @param {String} targetPath Local storage file path to the new copied file. The name of the copied file should be specified at the end of the targetPath.
 	* @returns {void}
 	* @BB50+
 	* @PB10
@@ -91,7 +91,7 @@ blackberry.io.file = {
 	
 	/**
 	* Delete a given file. 
-	* @param {String} path local storage file path to the file to be deleted
+	* @param {String} path Local storage file path to the file to be deleted.
 	* @returns {void}
 	* @BB50+
 	* @PB10
@@ -100,7 +100,7 @@ blackberry.io.file = {
 	
 	/**
 	* Save a Blob to the local file system. 
-	* @param {String} path Local storage file path to the file that is going to store the data
+	* @param {String} path Local storage file path to the file that is going to store the data.
 	* @param {Blob} data The Blob to be saved.
 	* @returns {void}
 	* @BB50+
@@ -110,11 +110,11 @@ blackberry.io.file = {
 	
 	/**
 	* Reads in a file from the local file system. 
-	* @param {String} path local storage file path to the file to be opened into a Blob
+	* @param {String} path Local storage file path to the file to be opened into a Blob.
 	* @callback {function} onFileOpened callback function to call on completion of loading the file from the file system.
-	* @callback {String} onFileOpened.fullPath full path of the file that was just opened
-	* @callback {Blob} onFileOpened.blobData blob that contains the file&apos;s contents
-	* @param {Boolean} [async] a flag specifying if the call to read should be asynchronous or synchronous.  If this parameter is not supplied the default of true will be used. This flag is ignored if used on BlackBerry PlayBook.
+	* @callback {String} onFileOpened.fullPath full path of the file that was just opened.
+	* @callback {Blob} onFileOpened.blobData blob that contains the file&apos;s contents.
+	* @param {Boolean} [async] A flag specifying if the call to read should be asynchronous or synchronous.  If this parameter is not supplied the default of true will be used. This flag is ignored if used on BlackBerry PlayBook.
 	* @returns {void}
 	* @BB50+
 	* @PB10
@@ -124,8 +124,8 @@ blackberry.io.file = {
 	/**
 	 * @name blackberry.io.file.copy^2
 	 * @description Copy a file to a given destination.
-	 * @param {String} path path to the file to be copied, specified in the form of file:/// URL
-	 * @param {String} targetPath path to the newly copied file, the name of the copied file should be specified at the end of the targetPath, in the form of file:/// URL
+	 * @param {String} path Path to the file to be copied, specified in the form of file:/// URL
+	 * @param {String} targetPath Path to the newly copied file, the name of the copied file should be specified at the end of the targetPath, in the form of file:/// URL
 	 * @returns {Object Literal}
 	 * {
 	 *   "data" : {
@@ -142,7 +142,7 @@ blackberry.io.file = {
 	/**
 	 * @name blackberry.io.file.delete
 	 * @description Delete the specified file.
-	 * @param {String} path path to the file to be deleted, specified in the form of file:/// URL
+	 * @param {String} path Path to the file to be deleted, specified in the form of file:/// URL
 	 * @returns {Object Literal}
 	 * {
 	 *   "data" : {
@@ -158,7 +158,7 @@ blackberry.io.file = {
 	/**
 	 * @name blackberry.io.file.exists^2
 	 * @description Determine whether a given file exists or not. 
-	 * @param {String} path path of the file, specified in the form of file:/// URL
+	 * @param {String} path Path of the file, specified in the form of file:/// URL
 	 * @returns {Object Literal}
 	 * {
 	 *   "data" : {
@@ -225,7 +225,7 @@ blackberry.io.file = {
 	/**
 	 * @name blackberry.io.file.open^2
 	 * @description Open the specified file with the registered content handler.
-	 * @param {String} path path to the file to be opened, specified in the form of file:/// URL
+	 * @param {String} path Path to the file to be opened, specified in the form of file:/// URL
 	 * @returns {Object Literal}
 	 * {
 	 *   "data" : {
@@ -242,8 +242,8 @@ blackberry.io.file = {
 	/**
 	 * @name blackberry.io.file.rename^2
 	 * @description Rename a given file.
-	 * @param {String} path path to the file, specified in the form of file:/// URL
-	 * @param {String} newFileName new file name
+	 * @param {String} path Path to the file, specified in the form of file:/// URL
+	 * @param {String} newFileName New file name.
 	 * @returns {Object Literal}
 	 * {
 	 *   "data" : {
