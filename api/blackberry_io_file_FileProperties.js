@@ -33,7 +33,7 @@
 blackberry.io.file.FileProperties = { };
 
 /**
-* Whether or not the file is read-only 
+* Whether or not the file is read-only. 
 * @type Boolean
 * @readOnly
 * @BB50+
@@ -41,7 +41,7 @@ blackberry.io.file.FileProperties = { };
 blackberry.io.file.FileProperties.prototype.isReadonly = { };
 
 /**
-* Whether or not the file is hidden 
+* Whether or not the file is hidden. 
 * @type Boolean
 * @readOnly
 * @BB50+
@@ -68,7 +68,7 @@ blackberry.io.file.FileProperties.prototype.size = { };
 blackberry.io.file.FileProperties.prototype.dateModified = { };
 
 /**
-* Provides the file&apos;s extension 
+* Provides the file&apos;s extension. 
 * @type String
 * @readOnly
 * @BB50+
@@ -77,7 +77,7 @@ blackberry.io.file.FileProperties.prototype.dateModified = { };
 blackberry.io.file.FileProperties.prototype.fileExtension = { };
 
 /**
-* Provides the directory that the file is in 
+* Provides the directory that the file is in. 
 * @type String
 * @readOnly
 * @BB50+
@@ -86,7 +86,7 @@ blackberry.io.file.FileProperties.prototype.fileExtension = { };
 blackberry.io.file.FileProperties.prototype.directory = { };
 
 /**
-* Specifies the mime type for the file 
+* Specifies the mime type for the file. 
 * @type String
 * @readOnly
 * @BB50+
