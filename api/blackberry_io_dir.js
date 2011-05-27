@@ -25,7 +25,7 @@ blackberry.io.dir = {
 	/**
 	* Gets the full paths of application storage folder and sub-folders under "shared". Paths are in the form of file:// URL <br><br>
 	* The application storage folder is created when you first access blackberry.io.dir.appDirs. This directory is a convenient location to store application-specific data that can only be accessed by the application.<br><br>
-	* The "shared" folder is the parent directory to the sub-folders such as camera and music, which can be accessed by all applications. These sub-folders can also be accessed when the BlackBerry PlayBook has "File Sharing" turned on. The <b>access_shared</b> permission must be set in order to reference any files/folders under "shared".
+	* The "shared" folder is the parent directory of the sub-folders such as camera and music, which can be accessed by all applications. These sub-folders can also be accessed when the BlackBerry PlayBook has "File Sharing" turned on. The <b>access_shared</b> permission must be set in order to reference any files/folders under "shared".
 	*
 	* @type Object
 	* @readOnly
@@ -58,7 +58,7 @@ blackberry.io.dir = {
 	
 	/**
 	* List all the directories that reside in a given directory. 
-	* @param {String} path path location of the directory.
+	* @param {String} path Path location of the directory.
 	* @returns {String[]}
 	* @BB50+
 	* @PB10
@@ -68,7 +68,7 @@ blackberry.io.dir = {
 	/**
 	* Determine whether a given directory exists or not. Returns true if the path exists and points to a
 	* directory, false otherwise.
-	* @param {String} path path location of the directory.
+	* @param {String} path Path location of the directory.
 	* @returns {Boolean}
 	* @BB50+
 	* @PB10
@@ -77,7 +77,7 @@ blackberry.io.dir = {
 	
 	/**
 	* Rename a given directory. 
-	* @param {String} path path location of the directory to be renamed.
+	* @param {String} ath Path location of the directory to be renamed.
 	* @param {String} newDirectoryName the new name for the directory.
 	* @returns {void}
 	* @BB50+
@@ -87,8 +87,8 @@ blackberry.io.dir = {
 	
 	/**
 	* Delete a given directory. The directory has to be empty unless the recursive flag is set to true. 
-	* @param {String} path path of the directory to be deleted.
-	* @param {Boolean} [recursive] flag to decide if all contents should be deleted
+	* @param {String} path Path of the directory to be deleted.
+	* @param {Boolean} [recursive] Flag to decide if all contents should be deleted.
 	* @returns {void}
 	* @BB50+
 	* @PB10
@@ -106,7 +106,7 @@ blackberry.io.dir = {
 	
 	/**
 	* Create an empty directory. 
-	* @param {String} path path location of the new directory. The name of the new directory should be included as parts of the path.
+	* @param {String} path Path location of the new directory. The name of the new directory should be included as parts of the path.
 	* @returns {void}
 	* @BB50+
 	* @PB10
@@ -144,7 +144,7 @@ blackberry.io.dir = {
 	
 	/**
 	 * @name blackberry.io.dir.appDirs^2
-	 * @description Gets the full paths of application storage folder and sub-folders under "shared". Paths are in the form of file:// URL <br><br>
+	 * @description Gets the full path of application storage folder and sub-folders under "shared". Paths are in the form of file:// URL <br><br>
 	 * The application storage folder is created when you first invoke this call. This directory is a convenient location to store application-specific data that can only be
 	 * accessed by the application.<br><br>
 	 * The "shared" folder is the parent directory to the sub-folders such as camera and music, which can be accessed by all applications. These sub-folders can also be accessed when the
@@ -202,7 +202,7 @@ blackberry.io.dir = {
 	
 	/**
 	 * Create an empty directory.
-	 * @param {String} path path of the directory to be created, the name of the new directory should be included as parts of the path, specified in the form of file:/// URL
+	 * @param {String} path Path of the directory to be created, the name of the new directory should be included as parts of the path, specified in the form of file:/// URL
 	 * @returns {Object Literal}
 	 * {
 	 *   "data" : {
@@ -251,7 +251,7 @@ blackberry.io.dir = {
 
 	/**
 	 * Get properties for a given directory.
-	 * @param {String} path path of the directory, specified in the form of file:/// URL
+	 * @param {String} path Path of the directory, specified in the form of file:/// URL
 	 * @returns {Object Literal}
 	 * {
 	 *   "data" : {
@@ -268,7 +268,7 @@ blackberry.io.dir = {
 	
 	/**
 	 * Gets the path location of the directory that the give file or directory resides in.
-	 * @param {String} path path of the directory or file, specified in the form of file:/// URL
+	 * @param {String} path Path of the directory or file, specified in the form of file:/// URL
 	 * @returns {Object Literal}
 	 * {
 	 *   "data" : {
@@ -283,7 +283,7 @@ blackberry.io.dir = {
 	
 	/**
 	 * List all the files and subdirectories that reside in a given directory.
-	 * @param {String} path path of the directory or file, specified in the form of file:/// URL
+	 * @param {String} path Path of the directory or file, specified in the form of file:/// URL
 	 * @returns {Object Literal}
 	 * {
 	 *   "data" : {
@@ -331,8 +331,8 @@ blackberry.io.dir = {
 	/**
 	 * @name blackberry.io.dir.rename^2
 	 * @description Rename a given directory.
-	 * @param {String} path path of the directory, specified in the form of file:/// URL
-	 * @param {String} newDirectoryName new name for the directory
+	 * @param {String} path Path of the directory, specified in the form of file:/// URL
+	 * @param {String} newDirectoryName New name for the directory.
 	 * @returns {Object Literal}
 	 * {
 	 *   "data" : {
