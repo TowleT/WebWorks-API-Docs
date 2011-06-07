@@ -24,7 +24,7 @@
  * <p>
  * When calling the puchase method only the ID or SKU of the digital good to be purchased is required; it is not necessary to provide both, and all other arguments are optional. If both the ID and SKU are provided, then the ID takes precedence; the SKU is only used if the digital good could not be located on the Payment Service server based on the ID.
  * <p>
- * If an application requires a list of its digital goods that have already been purchased by the user (e.g., to avoid offering for sale a digital good the user already owns), such a list can be obtained with the {@link blackberry.payment.getExistingPurchases} method. This method requires the same user interaction as the purchase method, so it can also be a long-running method.
+ * If an application requires a list of its digital goods that have already been purchased by the user (e.g. to avoid offering for sale a digital good the user already owns), such a list can be obtained with the {@link blackberry.payment.getExistingPurchases} method. This method requires the same user interaction as the purchase method, so it can also be a long-running method.
  * @toc {Payment} Payment
  * @featureID blackberry.payment
  */
