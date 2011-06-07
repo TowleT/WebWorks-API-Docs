@@ -29,32 +29,7 @@
  *      y= 0,
  *      z= 9.81};</i></p></p>
 */
-Acceleration = {
 
-	/**
-	 * @type Number
-	 * @description x-coordinate of the acceleration
-	 * @readOnly
-	 * @PB10
-	 */ 
-	Acceleration.prototype.x=Number,
-
-	/**
-	 * @type Number
-	 * @description y-coordinate of the acceleration
-	 * @readOnly
-	 * @PB10
-	 */ 	
-	Acceleration.prototype.y=Number,
-	
-	/**
-	 * @type Number
-	 * @description z-coordinate of the acceleration
-	 * @readOnly
-	 * @PB10
-	 */ 
-	Acceleration.prototype.z=Number,
-};
 
 /**
  * @toc {Device Motion} HTML5 Rotation Rate
@@ -118,7 +93,7 @@ RotationRate={
  * @toc {Device Motion} HTML5 Device Motion Event
  * @PB10
  * @namespace
- * This event provides direct access to motion data from an accelerometer and gyroscope. The three pieces of data provided are the acceleration, acceleration including gravity and rotation rate. <br>Because our hardware currently does not have a gyroscope, not all interfaces of this event are available to us (acceleration without gravity and rotation rate.)<br>
+ * This event provides direct access to motion data from an accelerometer and gyroscope. The three pieces of data provided are the acceleration, acceleration including gravity and rotation rate. <br>WebWorks currently supports data from the Accelerometer and not the Gyroscope. Not all interfaces of this event are available to us (acceleration without gravity and rotation rate.)<br>
  * @example
  * &lt;script type="text/javascript"&gt;
  *
@@ -145,13 +120,7 @@ DeviceMotionEvent = {
 	 */ 
 	DeviceMotionEvent.prototype.interval= Number,
 	
-	/**
-	 * @type Acceleration
-	 * @description The acceleration provided by the acceleration property is that of the body and hence excludes the effect of gravity.
-	 * @readOnly
-	 * @PB10
-	 */
-	DeviceMotionEvent.prototype.acceleration=null,
+	
 	
 	/**
 	 * @type Acceleration
@@ -162,14 +131,7 @@ DeviceMotionEvent = {
 	 */
 	DeviceMotionEvent.prototype.accelerationIncludingGravity=null,
 	
-	/**
-	 * @type RotationRate
-	 * @description The angular velocity of the motion.
-	 * @readOnly
-	 * @PB10
-	 */
-	DeviceMotionEvent.prototype.rotationRate=null,
-	
+		
 	/**
 	 * @function
 	 * @description Initializes the event listener and it's parameters
